@@ -29,13 +29,14 @@ header p{
 .pads{
     background: lightblue;
     width: 100%;
-    flex: 1;
+    display: flex;
+    
 }
 
 .pads > div{
     height: 100px;
     width: 100px;
-    display: flex;
+    flex: 1;
 }
 
 .pad1{
