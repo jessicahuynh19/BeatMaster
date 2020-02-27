@@ -6,8 +6,8 @@ window.addEventListener('load', () => {
     //sounds
     pads.forEach((pad, index) => {
         pad.addEventListener("click", function(){
-            sounds[4];
+                sounds[index].currentTime = 0;
+            sounds[index].play();
         });
     });
 });
-
