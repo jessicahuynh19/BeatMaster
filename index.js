@@ -14,16 +14,19 @@ window.addEventListener('load', () => {
 
     //sounds
     pads.forEach((pad, index) => {
-        pad.addEventListener("click", function(){
-                sounds[index].currentTime = 0;
+        pad.addEventListener("click", function() {
+            sounds[index].currentTime = 0;
             sounds[index].play();
+
+            createBubbles(index);
         });
     });
 
 
-    const createBubbles = () => {
+    const createBubbles = (index) => {
         const bubble = document.createElement("div");
         visual.appendChild(bubble);
-        bubble.style.backgroundColor = colors[]
+        bubble.style.backgroundColor = colors[index];
+        bubble.style.animation = 'jump 1s ease';
     };
 });
